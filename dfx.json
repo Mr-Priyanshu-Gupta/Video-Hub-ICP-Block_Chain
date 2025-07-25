@@ -1,0 +1,29 @@
+{
+  "dfx": "0.28.0",
+  "version": 1,
+  "canisters": {
+    "video_hub_backend": {
+      "type": "rust",
+      "package": "video_hub_backend",
+      "candid": "src/video_hub_backend/src/video_hub_backend.did",
+      "wasm": "target/wasm32-unknown-unknown/release/video_hub_backend.wasm"
+    },
+    "video_hub_assets": {
+      "type": "assets",
+      "source": ["src/video_hub_assets/dist"]
+    }
+  },
+  "networks": {
+    "local": {
+      "type": "ephemeral",
+      "bind": "127.0.0.1:4943"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env"
+}

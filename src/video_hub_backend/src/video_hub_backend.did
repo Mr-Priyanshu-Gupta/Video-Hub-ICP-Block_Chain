@@ -1,0 +1,5 @@
+service : {
+  "signup": (text, text, text) -> (text);
+  "login": (text, text) -> (text);
+  "whoami": () -> (principal);
+}
